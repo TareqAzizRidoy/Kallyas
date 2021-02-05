@@ -425,46 +425,57 @@ a,a:hover{
 
 .brand{
     width: 100%;
-    padding: 0px 0px 80px;
+    padding: 0px 20px 50px;
 }
-.brand .bg-light{
-    background: transparent !important;
+.brand .mixitup{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
 }
-.brand .navbar-light .navbar-nav .nav-link.active{
-    color: #000;
-    background: url("../images/hr3.png") center bottom no-repeat;
-    background-size: contain;
-}
-.brand .navbar-light .navbar-nav .nav-link{
-    color: #8b8b8b;
+.brand .mixitup button{
     font-size: 14px;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 24px;
     text-transform: capitalize;
-    margin: 0px 20px;
+    color: #8b8b8b;
+    margin: 0px 5px 30px;
+    outline: 0px;
+    border: 0px;
+    background: transparent;
+    transition: 1s;
 }
-.brand .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+.brand .mixitup button:hover, .brand .mixitup button:focus{
     color: #000;
-    background: url("../images/hr3.png") center bottom no-repeat;
-    background-size: contain;
 }
-.brand .picture{
+.padd{
+    padding: 8px;
+}
+.portfolio .item{
     width: 100%;
-    padding: 40px 0px 14px;
-    opacity: 0.3;
-    transition: 1s;
+    position: relative;
 }
-.brand .picture:hover, .brand .picture:focus{
-    opacity: 1;
+.portfolio .item-hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(83, 83, 83, 0.692);
+    text-align: center;
+    transform: scale(0);
+    transition: 0.5s;
 }
-.brand .picture-tow{
-    width: 100%;
-    padding: 14px 0px 40px;
-    opacity: 0.3;
-    transition: 1s;
+.portfolio .item:hover .item-hover{
+    transform: scale(1);
 }
-.brand .picture-tow:hover, .brand .picture-tow:focus{
-    opacity: 1;
+.portfolio .item-hover .fa{
+    font-size: 50px;
+    color: #000;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* brand section end */
@@ -571,6 +582,41 @@ a,a:hover{
 }
 
 /* project section end */
+
+/* achive section start */
+
+.achive{
+    width: 100%;
+    padding: 0px;
+}
+.achive .container{
+    width: 100%;
+    background: #f8f8f8;
+    padding: 80px 50px 40px;
+    text-align: center;
+}
+.achive .title h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: #fb414e;
+    margin-bottom: 80px;
+}
+.achive .club h1{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+}
+.achive .club p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fb414e;
+    margin-top: 10px;
+}
+
+/* achive section start */
 
 /* craft section start */
 
